@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirstDZ.MainPage">
+
+    
+
+    <StackLayout>
+        
+        <Picker x:Name="Pick" SelectedIndexChanged="Pick_SelectedIndexChanged"/>
+
+        
+        <ScrollView>
+            
+            <StackLayout>
+
+                <Frame HeightRequest="200">
+                    <Image x:Name="MainImage"/>
+                </Frame>
+
+                <StackLayout Orientation="Horizontal"  BackgroundColor="#e6e6e6">
+
+                    <Label x:Name="Amount" Text="0" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" TextColor="Black"/>
+
+                    <Button Text="-" Clicked="reduceAmount"/>
+                    <Button Text="+" Clicked="addAmount"/>
+
+                </StackLayout>
+
+                <Label Text="Description" HorizontalOptions="Center" x:Name="desc"/>
+                
+            </StackLayout>
+
+        </ScrollView>
+
+
+        <StackLayout VerticalOptions="EndAndExpand">
+
+            <Button Clicked="Button_Clicked" Text="Корзина"/>
+            
+        </StackLayout>
+            
+            
+            
+    </StackLayout>
+       
+        
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirstDZ.Cart">
+    <ContentPage.Content>
+        
+        
+        <StackLayout>
+            <ListView x:Name="GoodsView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<ViewCell>
+                            <Grid x:Name="cart">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.1*"/>
+                                    <ColumnDefinition Width="0.2*"/>
+                                    <ColumnDefinition Width="0.2*"/>
+                                    <ColumnDefinition Width="0.1*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding Name}"/>
+                                <Label Grid.Column="1" Text="{Binding count}"/>
+                            </Grid>
+                        </ViewCell>-->
+                        <ViewCell >
+                            <StackLayout Orientation="Horizontal" Margin="3">
+                                <Label Text="{Binding Name}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" TextColor="Black"/>
+                                <Label Text="{Binding count}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" TextColor="Black"/>
+                                <Button Clicked="deleteItem" CommandParameter="{Binding Name}" HorizontalOptions="End" Text="X" FontSize="Large" BackgroundColor="Red"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button VerticalOptions="EndAndExpand" Text="Заказать" Clicked="Button_Clicked" BackgroundColor="Green"/>
+
+        </StackLayout>
+
+        
+        
+    </ContentPage.Content>
+</ContentPage>

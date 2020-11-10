@@ -1,0 +1,15 @@
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\bin\Debug\netstandard2.0\FirstDZ.deps.json
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\bin\Debug\netstandard2.0\FirstDZ.dll
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\bin\Debug\netstandard2.0\ref\FirstDZ.dll
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\bin\Debug\netstandard2.0\FirstDZ.pdb
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\obj\Debug\netstandard2.0\FirstDZ.csprojAssemblyReference.cache
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\obj\Debug\netstandard2.0\FirstDZ.AssemblyInfoInputs.cache
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\obj\Debug\netstandard2.0\FirstDZ.AssemblyInfo.cs
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\obj\Debug\netstandard2.0\FirstDZ.csproj.CoreCompileInputs.cache
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\obj\Debug\netstandard2.0\FirstDZ.dll
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\obj\Debug\netstandard2.0\ref\FirstDZ.dll
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\obj\Debug\netstandard2.0\FirstDZ.pdb
+C:\Users\kmdho\source\repos\FirstDZ\FirstDZ\FirstDZ\obj\Debug\netstandard2.0\Cart.xaml.g.cs
