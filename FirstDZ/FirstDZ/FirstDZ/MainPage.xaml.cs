@@ -100,7 +100,7 @@ namespace FirstDZ
 
         private void reduceAmount (object sender, EventArgs e)
         {
-            if (int.Parse(Amount.Text) > 0)
+            if (int.Parse(Amount.Text) > 1)
             {
                 Amount.Text = (int.Parse(Amount.Text) - 1).ToString();
                 Cart.goodsArr[Pick.SelectedItem?.ToString()] = new Good
@@ -108,6 +108,11 @@ namespace FirstDZ
                     Name = Pick.SelectedItem?.ToString(),
                     count = int.Parse(Amount.Text)
                 };
+            }
+            else if(int.Parse(Amount.Text) == 1)
+            {
+                Amount.Text = (int.Parse(Amount.Text) - 1).ToString();
+                Cart.goodsArr.Remove(Pick.SelectedItem?.ToString());
             }
             else
                 DisplayAlert("Error", "АТЯТЯ", "Ладно");
