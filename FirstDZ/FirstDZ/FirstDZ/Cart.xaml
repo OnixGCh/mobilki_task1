@@ -9,18 +9,6 @@
             <ListView x:Name="GoodsView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <!--<ViewCell>
-                            <Grid x:Name="cart">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.1*"/>
-                                    <ColumnDefinition Width="0.2*"/>
-                                    <ColumnDefinition Width="0.2*"/>
-                                    <ColumnDefinition Width="0.1*"/>
-                                </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0" Text="{Binding Name}"/>
-                                <Label Grid.Column="1" Text="{Binding count}"/>
-                            </Grid>
-                        </ViewCell>-->
                         <ViewCell >
                             <StackLayout Orientation="Horizontal" Margin="3">
                                 <Label Text="{Binding Name}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Medium" TextColor="Black"/>

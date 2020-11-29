@@ -75,9 +75,14 @@ namespace FirstDZ
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+            var button = sender as Button;
+            button.IsEnabled = false;
+
             Page cart = new Cart();
 
             Navigation.PushAsync(cart);
+
+            cart.Disappearing += (send, ev) => button.IsEnabled = true;
 
             Pick.SelectedItem = null;
             Amount.Text = "0";

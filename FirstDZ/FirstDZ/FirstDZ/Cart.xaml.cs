@@ -19,7 +19,7 @@ namespace FirstDZ
     public partial class Cart : ContentPage
     {
 
-        public static SortedDictionary<string, Good> goodsArr = new SortedDictionary<string, Good>();
+        public static Dictionary<string, Good> goodsArr = new Dictionary<string, Good>();
         public Cart()
         {
             InitializeComponent();
@@ -36,11 +36,21 @@ namespace FirstDZ
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            if (await DisplayAlert("Order", "Уверен?", "Офк", "Падажжи"))
+            var button = sender as Button;
+            button.IsEnabled = false;
+
+            if (goodsArr.Count == 0)
+            {
+                await DisplayAlert("Ошибка", "Корзина пустая", "Ok");
+                
+            }
+            else if (await DisplayAlert("Order", "Точно?", "Да", "Нет"))
             {
                 goodsArr.Clear();
                 GoodsView.ItemsSource = goodsArr.Select((a) => { return a.Value; }).ToList();
             }
+
+            button.IsEnabled = true;
         }
     }
 }
